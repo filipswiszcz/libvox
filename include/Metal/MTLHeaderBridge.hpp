@@ -420,8 +420,6 @@ _MTL_PRIVATE_DEF_SEL(currentAllocatedSize,
     "currentAllocatedSize");
 _MTL_PRIVATE_DEF_SEL(curveBasis,
     "curveBasis");
-_MTL_PRIVATE_DEF_SEL(curveEndCaps,
-    "curveEndCaps");
 _MTL_PRIVATE_DEF_SEL(curveType,
     "curveType");
 _MTL_PRIVATE_DEF_SEL(data,
@@ -536,6 +534,8 @@ _MTL_PRIVATE_DEF_SEL(encodedLength,
     "encodedLength");
 _MTL_PRIVATE_DEF_SEL(encoderLabel,
     "encoderLabel");
+_MTL_PRIVATE_DEF_SEL(curveEndCaps,
+    "curveEndCaps");
 _MTL_PRIVATE_DEF_SEL(endEncoding,
     "endEncoding");
 _MTL_PRIVATE_DEF_SEL(endOfEncoderSampleIndex,
@@ -838,14 +838,8 @@ _MTL_PRIVATE_DEF_SEL(maxKernelBufferBindCount,
     "maxKernelBufferBindCount");
 _MTL_PRIVATE_DEF_SEL(maxKernelThreadgroupMemoryBindCount,
     "maxKernelThreadgroupMemoryBindCount");
-_MTL_PRIVATE_DEF_SEL(maxMeshBufferBindCount,
-    "maxMeshBufferBindCount");
 _MTL_PRIVATE_DEF_SEL(maxMotionTransformCount,
     "maxMotionTransformCount");
-_MTL_PRIVATE_DEF_SEL(maxObjectBufferBindCount,
-    "maxObjectBufferBindCount");
-_MTL_PRIVATE_DEF_SEL(maxObjectThreadgroupMemoryBindCount,
-    "maxObjectThreadgroupMemoryBindCount");
 _MTL_PRIVATE_DEF_SEL(maxSampleCount,
     "maxSampleCount");
 _MTL_PRIVATE_DEF_SEL(maxTessellationFactor,
@@ -1462,8 +1456,6 @@ _MTL_PRIVATE_DEF_SEL(setCullMode_,
     "setCullMode:");
 _MTL_PRIVATE_DEF_SEL(setCurveBasis_,
     "setCurveBasis:");
-_MTL_PRIVATE_DEF_SEL(setCurveEndCaps_,
-    "setCurveEndCaps:");
 _MTL_PRIVATE_DEF_SEL(setCurveType_,
     "setCurveType:");
 _MTL_PRIVATE_DEF_SEL(setDataType_,
@@ -1508,6 +1500,8 @@ _MTL_PRIVATE_DEF_SEL(setDestinationRGBBlendFactor_,
     "setDestinationRGBBlendFactor:");
 _MTL_PRIVATE_DEF_SEL(setDispatchType_,
     "setDispatchType:");
+_MTL_PRIVATE_DEF_SEL(setCurveEndCaps_,
+    "setCurveEndCaps:");
 _MTL_PRIVATE_DEF_SEL(setEndOfEncoderSampleIndex_,
     "setEndOfEncoderSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setEndOfFragmentSampleIndex_,
@@ -1682,14 +1676,8 @@ _MTL_PRIVATE_DEF_SEL(setMaxKernelBufferBindCount_,
     "setMaxKernelBufferBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxKernelThreadgroupMemoryBindCount_,
     "setMaxKernelThreadgroupMemoryBindCount:");
-_MTL_PRIVATE_DEF_SEL(setMaxMeshBufferBindCount_,
-    "setMaxMeshBufferBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxMotionTransformCount_,
     "setMaxMotionTransformCount:");
-_MTL_PRIVATE_DEF_SEL(setMaxObjectBufferBindCount_,
-    "setMaxObjectBufferBindCount:");
-_MTL_PRIVATE_DEF_SEL(setMaxObjectThreadgroupMemoryBindCount_,
-    "setMaxObjectThreadgroupMemoryBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxTessellationFactor_,
     "setMaxTessellationFactor:");
 _MTL_PRIVATE_DEF_SEL(setMaxTotalThreadgroupsPerMeshGrid_,

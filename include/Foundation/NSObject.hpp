@@ -243,7 +243,7 @@ _NS_INLINE _Ret NS::Object::sendMessageSafe(const void* pObj, SEL selector, _Arg
 
     if constexpr (!std::is_void<_Ret>::value)
     {
-        return _Ret(0);
+        return 0;
     }
 }
 

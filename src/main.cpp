@@ -1,20 +1,26 @@
-#include <iostream>
-
 #define NS_PRIVATE_IMPLEMENTATION
-#define CA_PRIVATE_IMPLEMENTATION
 #define MTL_PRIVATE_IMPLEMENTATION
+#define MTK_PRIVATE_IMPLEMENTATION
 
-#include <metal-cpp/Metal.hpp>
+#include <Foundation/Foundation.hpp>
+#include <Metal/Metal.hpp>
+#include <MetalKit/MetalKit.hpp>
 
 #include "util/logger.cpp"
 
+#include "app.hpp"
+
 int main() {
 
-    Logger logger;
+    NS::AutoreleasePool* pool = NS::AutoreleasePool::alloc() -> init();
 
-    MTL::Device* device = MTL::CreateSystemDefaultDevice();
+    CoreApplicationDelegate coreApp;
 
-    logger.info("device init");
+    NS::Application* sharedApp = NS::Application::sharedApplication();
+    sharedApp -> setDelegate(&coreApp);
+    sharedApp -> run();
+
+    pool -> release();
 
     return 0;
 }
