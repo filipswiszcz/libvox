@@ -2,6 +2,8 @@
 #include <Metal/Metal.hpp>
 #include <MetalKit/MetalKit.hpp>
 
+#include "model/vertex_data.hpp"
+
 #pragma region Declarations {
 
     class CoreRender {
@@ -12,12 +14,19 @@
 
             ~CoreRender();
 
+            void build_shaders();
+
+            void build_buffers();
+
             void draw(MTK::View* view);
 
         private:
 
             MTL::Device* _device;
-            MTL::CommandQueue* _cmdQueue;
+            MTL::CommandQueue* _cmd_queue;
+            MTL::RenderPipelineState* _render_pipeline_state;
+            MTL::Buffer* _vrtx_pos_buff;
+            MTL::Buffer* _vrtx_colors_buff;
 
     };
 
@@ -33,7 +42,7 @@
 
         private:
 
-            CoreRender* _coreRender;
+            CoreRender* _core_render;
 
     };
 
@@ -56,7 +65,7 @@
             NS::Window* _window;
             MTK::View* _view;
             MTL::Device* _device;
-            CoreViewDelegate* _coreViewDelegate = nullptr;
+            CoreViewDelegate* _core_view_delegate = nullptr;
 
     };
 
